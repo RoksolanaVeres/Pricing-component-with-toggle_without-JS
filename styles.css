@@ -62,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 3%;
 }
 
 .toggle-button {
@@ -99,13 +99,30 @@ body {
 
 .payment-plan {
   font-size: 1.2rem;
-  color: var(--light-grayish-blue);
 }
 
+/* displays different price depending on wheter the checkbox is checked */
 .toggle-container:has(.toggle-button:checked)
   + .pricing-cards__container
   .annual-price {
   display: none;
+}
+
+/* displays different colors of labels depending on wheter the checkbox is checked */
+.monthly-plan_label {
+  color: var(--light-grayish-blue);
+}
+
+.toggle-container:has(.toggle-button:checked) .monthly-plan_label {
+  color: var(--dark-grayish-blue);
+}
+
+.annually-plan_label {
+  color: var(--dark-grayish-blue);
+}
+
+.toggle-container:has(.toggle-button:checked) .annually-plan_label {
+  color: var(--light-grayish-blue);
 }
 
 /* pricing-cards */
@@ -161,7 +178,7 @@ body {
 }
 
 .pricing-card__price {
-  font-size: 5.5rem;
+  font-size: 4rem;
 }
 
 .pricing-card__divider {
@@ -240,6 +257,15 @@ body {
 
   .main-container {
     width: 75%;
+    max-width: 1060px;
+  }
+
+  .toggle-container {
+    gap: 2em;
+  }
+
+  .pricing-card__price {
+    font-size: 5.5rem;
   }
 }
 
