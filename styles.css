@@ -99,6 +99,7 @@ body {
 
 .payment-plan {
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* displays different price depending on wheter the checkbox is checked */

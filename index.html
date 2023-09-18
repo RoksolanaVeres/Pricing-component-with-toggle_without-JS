@@ -17,9 +17,19 @@
     <main class="main-container">
       <h1 class="main-header">Our Pricing</h1>
       <div class="toggle-container">
-        <span class="payment-plan annually-plan_label">Annually</span>
-        <input type="checkbox" role="switch" class="toggle-button" checked />
-        <span class="payment-plan monthly-plan_label">Monthly</span>
+        <label for="price-switcher" class="payment-plan annually-plan_label"
+          >Annually</label
+        >
+        <input
+          type="checkbox"
+          role="switch"
+          class="toggle-button"
+          id="price-switcher"
+          checked
+        />
+        <label for="price-switcher" class="payment-plan monthly-plan_label"
+          >Monthly</label
+        >
       </div>
       <div class="pricing-cards__container">
         <!-- basic card -->
